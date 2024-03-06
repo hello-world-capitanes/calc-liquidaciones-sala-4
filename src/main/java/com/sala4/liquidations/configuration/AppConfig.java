@@ -4,6 +4,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "es.neesis.annotations")
+@ComponentScan(basePackages = "con.sala4.liquidations")
 public class AppConfig {
 }

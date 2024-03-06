@@ -1,8 +1,7 @@
 package com.sala4.liquidations.services;
 
-import com.sala4.liquidations.models.Risk;
+import com.sala4.liquidations.models.Product;
 
 public interface ILiquidationCalcService {
-
-    Double liquidationCalculation(Risk risk);
+    double liquidationCalculation(Product product);
 }

@@ -13,4 +13,6 @@ public class Product {
     List<ProductWarranty> productWarranties;
     private List<Double> baseCapitalList;
 
+    public Product(String numeroPoliza, List<ProductWarranty> bienesAfectados, double preexistenciaContenido, double preexistenciaContinente) {
+    }
 }

@@ -10,14 +10,14 @@ public class Risk {
     private String name;
     private String ocurrenceDate;
     private String originCause;
-    private List<Double> damages;
+    private List<ProductWarranty> damages;
     private Policy policyAssociated;
-    private double realValue;
-    private double purchaseValue;
-    private int ageYears;
+    private double realValueContent;
+    private double realValueContinent;
+
 
 
     public double totalDamageCost(){
-        return damages.stream().mapToDouble(Double::doubleValue).sum();
+        return 0;
     }
 }

@@ -13,11 +13,22 @@ public class LiquidationCalcService implements ILiquidationCalcService{
     public double liquidationCalculation(Product product) {
         double totalAmount=0;
         for (ProductWarranty warranty: product.getProductWarranties()) {
-            if(!warranty.isExcluded()){
-                totalAmount+= liquidationCalculationByAssessment(warranty);
+            if(!warranty.isExcluded()) {
+                double warrantyAmount = liquidationCalculationByAssessment(warranty);
+                warrantyAmount = calculateOverinsurance(warranty,warrantyAmount);
+                totalAmount+=warrantyAmount;
             }
         }
         return totalAmount;
+    }
+
+    private double calculateOverinsurance(ProductWarranty warranty, double warrantyAmount) {
+        double totalInsurance = warranty.getCapitalInsured();
+        if(totalInsurance < warranty.getRisk().getRealValueContent()){
+            double excessRatio = (warranty.getPreexistence() - totalInsuredValue) / warranty.getPreexistence();
+            amountToLiquidate *= (1 - excessRatio);
+        }
+        re
     }
 
     private double liquidationCalculationByAssessment(ProductWarranty warranty) {
@@ -26,10 +37,25 @@ public class LiquidationCalcService implements ILiquidationCalcService{
             case PRIMER_RIESGO:
                 break;
             case REPOSICION_NUEVO:
+                amountToLiquidation = warranty.getNewArticleValue();
                 break;
             case VALOR_REAL:
+                amountToLiquidation = calculateRealValue(warranty);
                 break;
         }
         return amountToLiquidation;
+    }
+
+    private double calculateRealValue(ProductWarranty warranty) {
+        double initialCost = warranty.getPurchaseValue();
+        double yearAge = warranty.getAgeYears();
+
+        double deprecationPercentage= 1.0 / 7.0;
+        for (int i =0 ; i < yearAge; i++){
+            initialCost*=(1- deprecationPercentage);
+        }
+
+        double residualValue = initialCost * 0.1;
+        return Math.max(residualValue,initialCost);
     }
 }

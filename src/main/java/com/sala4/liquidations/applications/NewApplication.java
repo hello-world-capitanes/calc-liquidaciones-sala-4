@@ -1,6 +1,6 @@
-package com.sala4.annotations.applications;
+package com.sala4.liquidations.applications;
 
-import com.sala4.annotations.services.MailService;
+import com.sala4.liquidations.services.MailService;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,6 +1,6 @@
-package com.sala4.annotations.applications;
+package com.sala4.liquidations.applications;
 
-import com.sala4.annotations.services.IMailService;
+import com.sala4.liquidations.services.IMailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

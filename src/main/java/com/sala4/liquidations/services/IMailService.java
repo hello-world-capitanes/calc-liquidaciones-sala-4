@@ -1,4 +1,4 @@
-package com.sala4.annotations.services;
+package com.sala4.liquidations.services;
 
 public interface IMailService {
 

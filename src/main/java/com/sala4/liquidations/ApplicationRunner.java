@@ -1,9 +1,9 @@
-package com.sala4.annotations;
+package com.sala4.liquidations;
 
-import com.sala4.annotations.applications.AutowiredApplication;
-import com.sala4.annotations.applications.ConstructorApplication;
-import com.sala4.annotations.applications.NewApplication;
-import com.sala4.annotations.configuration.AppConfig;
+import com.sala4.liquidations.applications.AutowiredApplication;
+import com.sala4.liquidations.applications.ConstructorApplication;
+import com.sala4.liquidations.applications.NewApplication;
+import com.sala4.liquidations.configuration.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class ApplicationRunner {

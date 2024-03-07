@@ -15,10 +15,22 @@ public class ProductWarranty {
     private double purchaseValue;
     private int ageYears;
 
-    public ProductWarranty(String name, String warrantyCode, double newArticleValue, double purchaseValue, int ageYears) {
+    public ProductWarranty(Risk risk, String name, Warranty warranty, boolean excluded, PaymentType paymentType, double capitalInsured, double newArticleValue, double purchaseValue, int ageYears) {
+        this.risk = risk;
         this.name = name;
-        this.warranty = warrantyCode;
+        this.warranty = warranty;
+        this.excluded = excluded;
+        this.paymentType = paymentType;
+        this.capitalInsured = capitalInsured;
+        this.newArticleValue = newArticleValue;
+        this.purchaseValue = purchaseValue;
+        this.ageYears = ageYears;
+    }
+
+    public ProductWarranty() {
 
     }
-    
+
+    public ProductWarranty(String nombreBien, Warranty newWarranty, double valorNuevo, double valorInicial, int antiguedad) {
+    }
 }

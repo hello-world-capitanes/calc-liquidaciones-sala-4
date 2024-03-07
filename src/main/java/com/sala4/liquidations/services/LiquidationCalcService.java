@@ -25,16 +25,17 @@ public class LiquidationCalcService implements ILiquidationCalcService{
     private double calculateOverinsurance(ProductWarranty warranty, double warrantyAmount) {
         double totalInsurance = warranty.getCapitalInsured();
         if(totalInsurance < warranty.getRisk().getRealValueContent()){
-            double excessRatio = (warranty.getPreexistence() - totalInsuredValue) / warranty.getPreexistence();
-            amountToLiquidate *= (1 - excessRatio);
+            double excessRatio = (warranty.getRisk().getRealValueContent() - totalInsurance) / warranty.getRisk().getRealValueContent();
+            totalInsurance *= (1 - excessRatio);
         }
-        re
+        return totalInsurance;
     }
 
     private double liquidationCalculationByAssessment(ProductWarranty warranty) {
         double amountToLiquidation=0;
         switch (warranty.getPaymentType()){
             case PRIMER_RIESGO:
+                amountToLiquidation= warranty.getCapitalInsured();
                 break;
             case REPOSICION_NUEVO:
                 amountToLiquidation = warranty.getNewArticleValue();

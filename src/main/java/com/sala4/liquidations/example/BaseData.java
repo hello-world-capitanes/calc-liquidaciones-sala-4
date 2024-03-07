@@ -1,12 +1,12 @@
-package helloworld.liquidaciondiversos.example;
-
-import helloworld.liquidaciondiversos.*;
+package com.sala4.liquidations.example;
+import com.sala4.liquidations.models.*;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Data
 public class BaseData {
     private Map<String, Product> products;
     private Map<String, Risk> risks;
@@ -151,4 +151,7 @@ public class BaseData {
         return warranties;
 
     }
+
+
+
 }

@@ -4,7 +4,7 @@ import com.sala4.liquidations.example.BaseData;
 import com.sala4.liquidations.models.Product;
 import com.sala4.liquidations.models.ProductWarranty;
 import com.sala4.liquidations.services.ILiquidationCalcService;
-import com.sala4.liquidations.services.IRegisterRiskService;
+import com.sala4.liquidations.services.IRegisterSinisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.sala4.liquidations.models.Warranty;
@@ -18,7 +18,9 @@ public class AutowiredApplication {
     @Autowired
     private ILiquidationCalcService liquidationCalcService;
     @Autowired
-    private IRegisterRiskService registerRiskService;
+    private IRegisterSinisterService registerRiskService;
+
+
 
 
     public void run(){

@@ -36,5 +36,15 @@ public class SinisterValidator implements Validator {
         }else{
             ValidationUtils.rejectIfEmptyOrWhitespace(errors, "ocurrencyDate", "Error.sinister.ocurrencyDate.notEmpty");
         }
+
+
+        if (sinisterRequest.getRiskId() != null && !sinisterRequest.getRiskId().matches("[a-zA-Z0-9]+")) {
+            errors.rejectValue("riskId", "Error.sinister.riskId.invalid");
+        }
+
+        if (sinisterRequest.getPolicyId() != null && !sinisterRequest.getPolicyId().matches("[a-zA-Z0-9]+")) {
+            errors.rejectValue("policyId", "Error.sinister.policyId.invalid");
+        }
+
     }
 }

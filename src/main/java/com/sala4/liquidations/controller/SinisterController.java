@@ -4,6 +4,7 @@ import com.sala4.liquidations.models.dto.SinisterRequest;
 import com.sala4.liquidations.services.IRegisterSinisterService;
 import com.sala4.liquidations.validators.SinisterValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -23,7 +24,7 @@ public class SinisterController {
     private SinisterValidator sinisterValidator;
 
     @PostMapping("/sinister")
-    public ResponseEntity<String> registerSinister(@Validated @RequestBody SinisterRequest sinisterRequest,
+    public ResponseEntity<Integer> registerSinister(@Validated @RequestBody SinisterRequest sinisterRequest,
                                                    BindingResult bindingResult) {
         sinisterValidator.validate(sinisterRequest, bindingResult);
         sinisterService.registerRisk(sinisterRequest);
@@ -32,10 +33,20 @@ public class SinisterController {
                     .stream()
                     .map(error -> error.getCode())
                     .collect(Collectors.joining(", "));
-            return ResponseEntity.badRequest().body(errors);
-        }
+            return new ResponseEntity<>(0, HttpStatus.BAD_REQUEST);
 
-        return ResponseEntity.ok("Sinister registered");
+        }
+        //return ok 200 with sinister created id in two separate variables like  ResponseEntity(1, ResponseEntity.ok)
+        return new ResponseEntity<>(1, HttpStatus.OK);
+
+
+
+
+
+
+
+
+
     }
 
 

@@ -2,6 +2,7 @@ package com.sala4.liquidations.controller;
 
 import com.sala4.liquidations.models.dto.SinisterRequest;
 import com.sala4.liquidations.services.IRegisterSinisterService;
+import com.sala4.liquidations.services.SinisterService;
 import com.sala4.liquidations.validators.SinisterValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,43 +11,36 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.net.http.HttpResponse;
 import java.util.stream.Collectors;
 
 @RestController
+@RequestMapping("/sinister")
 public class SinisterController {
 
     @Autowired
-    private IRegisterSinisterService sinisterService;
-    @Autowired
     private SinisterValidator sinisterValidator;
+    @Autowired
+    private SinisterService sinisterService;
 
-    @PostMapping("/sinister")
-    public ResponseEntity<Integer> registerSinister(@Validated @RequestBody SinisterRequest sinisterRequest,
+    @PostMapping("")
+    public ResponseEntity<Long> registerSinister(@Validated @RequestBody SinisterRequest sinisterRequest,
                                                    BindingResult bindingResult) {
         sinisterValidator.validate(sinisterRequest, bindingResult);
-        sinisterService.registerRisk(sinisterRequest);
+        Long idSinister = sinisterService.createSinister(sinisterRequest);
         if(bindingResult.hasErrors()){
             String errors = bindingResult.getAllErrors()
                     .stream()
                     .map(error -> error.getCode())
                     .collect(Collectors.joining(", "));
-            return new ResponseEntity<>(0, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(idSinister, HttpStatus.BAD_REQUEST);
 
         }
         //return ok 200 with sinister created id in two separate variables like  ResponseEntity(1, ResponseEntity.ok)
-        return new ResponseEntity<>(1, HttpStatus.OK);
-
-
-
-
-
-
-
-
-
+        return new ResponseEntity<>(idSinister, HttpStatus.OK);
     }
 
 

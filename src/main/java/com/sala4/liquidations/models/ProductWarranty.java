@@ -1,36 +1,39 @@
 package com.sala4.liquidations.models;
 
-
 import lombok.Data;
 
+import jakarta.persistence.*;
+
+import java.util.List;
+
 @Data
+@Entity
 public class ProductWarranty {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
     private Risk risk;
+
     private String name;
+
+    @ManyToOne
     private Warranty warranty;
+
     private boolean excluded;
+
+    @Enumerated(EnumType.STRING)
     private PaymentType paymentType;
+
     private double capitalInsured;
     private double newArticleValue;
     private double purchaseValue;
     private int ageYears;
 
-    public ProductWarranty(Risk risk, String name, Warranty warranty, boolean excluded, PaymentType paymentType, double capitalInsured, double newArticleValue, double purchaseValue, int ageYears) {
-        this.risk = risk;
-        this.name = name;
-        this.warranty = warranty;
-        this.excluded = excluded;
-        this.paymentType = paymentType;
-        this.capitalInsured = capitalInsured;
-        this.newArticleValue = newArticleValue;
-        this.purchaseValue = purchaseValue;
-        this.ageYears = ageYears;
-    }
-
-    public ProductWarranty() {
-
-    }
-
-    public ProductWarranty(String nombreBien, Warranty newWarranty, double valorNuevo, double valorInicial, int antiguedad) {
-    }
+    @ManyToOne
+    private Product product;
+   /* @OneToMany(mappedBy = "productWarranty", cascade = CascadeType.ALL)
+    private List<Damages> damages;*/
 }

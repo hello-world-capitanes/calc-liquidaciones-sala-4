@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 @Component
 public class AutowiredApplication {
-
+/*
     @Autowired
     private ILiquidationCalcService liquidationCalcService;
     @Autowired
@@ -120,4 +120,6 @@ public class AutowiredApplication {
         System.out.println("¡Alta de siniestro realizada con éxito!");
         return product;
     }
+
+ */
 }

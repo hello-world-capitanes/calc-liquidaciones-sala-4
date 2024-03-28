@@ -12,8 +12,8 @@ import java.util.List;
 
 @Data
 public class SinisterDTO {
-    @NotNull
-    private Policy policy;
+    /*@NotNull
+    private Policy policy;*/
     private Date ocurrencyDate;
     private String risk;
     private List<Damages> damagedList;

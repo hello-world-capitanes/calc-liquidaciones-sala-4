@@ -1,0 +1,23 @@
+
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ş´ûÂşÿÿÿÿ8®¸”¤è1J$cf4eef7e-6d28-4bcf-97a2-5f14e3310f40
+‡
+java:S1128"DRemove this unused import 'com.sala4.liquidations.example.BaseData'.(ºÇâú8ˆøõ¤è1J$edea1e5d-1653-4f9f-ad6f-6fd504b256c7
+Š
+java:S1128"BRemove this unused import 'com.sala4.liquidations.models.Product'.( é‰üÿÿÿÿ8‰øõ¤è1J$6e2d3d02-491a-4dc5-9ae7-fdb4ea221db6
+
+java:S1128"JRemove this unused import 'com.sala4.liquidations.models.ProductWarranty'.(ğ„‘ı8‰øõ¤è1J$323a4b82-fa57-4193-ba81-ae073e67c2af
+–
+java:S1128"TRemove this unused import 'com.sala4.liquidations.services.ILiquidationCalcService'.(„Ê(8Šøõ¤è1J$5fac8ed4-de2d-4fb3-8d9f-cdc5f9e03da3
+˜
+java:S1128"URemove this unused import 'com.sala4.liquidations.services.IRegisterSinisterService'.(ª®ŒÈ8Šøõ¤è1J$9a848687-30b0-44e7-8cf7-f192ddb89329
+›
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8Šøõ¤è1J$c980b495-44c7-4f74-a553-b383eeabad20
+‹
+java:S1128
+"CRemove this unused import 'com.sala4.liquidations.models.Warranty'.(³¥‡¼ÿÿÿÿÿ8Šøõ¤è1J$41aab7c1-03f8-416c-801b-f472e1bb261c
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8‹øõ¤è1J$624f0bfc-3537-4a95-a26a-3c4840652520
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‹øõ¤è1J$87f5fc00-b4f9-4db5-b82f-1f28c4186cbb
+v
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8‹øõ¤è1J$afbc62a8-f5a4-453d-b910-4061831488b6

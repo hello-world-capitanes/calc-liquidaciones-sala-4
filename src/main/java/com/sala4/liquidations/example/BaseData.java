@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 @Data
 public class BaseData {
-    private Map<String, Product> products;
+    /*private Map<String, Product> products;
     private Map<String, Risk> risks;
 
     private Map<String, Warranty> warranties;
@@ -151,7 +151,7 @@ public class BaseData {
         return warranties;
 
     }
-
+*/
 
 
 }

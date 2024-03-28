@@ -10,6 +10,8 @@ public class SinisterRequest {
     private String policyId;
     private String ocurrencyDate;
     private String riskId;
-    private List<Damages> damageList;
+    private String cause;
+    private String direction;
+    private List<String> damageList;
 
 }

@@ -79,3 +79,5 @@ v
 Fsrc/main/java/com/sala4/liquidations/repository/IDamageRepository.java,6\c\6c6ea7604b907b83ad8d2efa12fb6806d3df46b7
 v
 Fsrc/main/java/com/sala4/liquidations/repository/DamagesRepository.java,2\5\25be7dc70683d30741dab66e3b73e707be73bfee
+o
+?src/main/java/com/sala4/liquidations/models/dto/DamagesDTO.java,7\7\775220eb42178c08484ea4e1cce690edbee13fc6

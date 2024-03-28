@@ -1,9 +1,9 @@
 
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$05d9a0e8-f837-4468-b9dc-211e67c37c5f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8´Îå¦è1J$6fc556b5-288f-43fe-b3e2-83eb5836f481
-v
-java:S1854#":Remove this useless assignment to local variable "errors".(ì¦Ü÷J$e5518303-b424-4e88-930b-1ff68cb80ad2
-g
-java:S1481#"+Remove this unused "errors" local variable.(ì¦Ü÷J$a0cd23bd-8ab9-4e1b-955f-b13ace11f94d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8žœï¨è1J$626aaae8-31ed-49be-b6e4-42eafb2f5abc
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8žœï¨è1J$74a9a9f6-0c52-426b-842a-a137859b7eb6
+}
+java:S1854#":Remove this useless assignment to local variable "errors".(ì¦Ü÷8¢œï¨è1J$b97fc596-22e0-4c67-b899-6ed43807a1bd
+n
+java:S1481#"+Remove this unused "errors" local variable.(ì¦Ü÷8¥œï¨è1J$2a096a97-9e3a-4073-8ec1-3b04992ec63f

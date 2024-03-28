@@ -1,7 +1,11 @@
 
+
+java:S4973x"<Strings and Boxed types should be compared using "equals()".(íşé°8–é¨è1J$44261d15-2e81-4511-96ed-fc26fc62d018
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ê›à§è1J$51e99924-252c-42c3-808c-b462d0720af5
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$37767b44-6ff6-44f2-9bce-5bcb97d38a39
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ë›à§è1J$7edc3141-c19c-408d-a3d9-b11a109c4f8f
-n
-java:S1168:"+Return an empty collection instead of null.(¥¹ï8ó›à§è1J$df68b81c-2f83-4889-a07b-15a06b230e0d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$cb2706c5-0600-4205-95e2-25c0c4db2107
+•
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°–é¨è1J$ca9de283-01eb-41d6-9ca7-2a46b96373c8
+‡
+java:S16128"DReplace this lambda with method reference 'Damages::getDescription'.(ÕãßÈ8±–é¨è1J$16590a00-40f9-47d1-b186-2be09e59b952

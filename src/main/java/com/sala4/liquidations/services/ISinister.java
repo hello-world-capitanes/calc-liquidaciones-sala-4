@@ -14,7 +14,7 @@ public interface ISinister {
     List<DamagesDTO> getSinisterListDamage(Long idSinister);
     boolean createSinisterDamage(Long idSinister, List<DamagesDTO> damages);
     Damages getSinisterDamage(Long idSinister, Long idDamage);
-    boolean updateSinisterDamage(Long idSinister, Long idDamage);
+    boolean updateSinisterDamage(Long idDamage, );
     boolean deleteSinisterDamage(Long idDamage);
 }
 /*Post Sinister

@@ -6,6 +6,7 @@ import lombok.Data;
 public class DamagesDTO {
 
     private Long damageId;
+    private Long sinisterId;
 
     private String description;
 }

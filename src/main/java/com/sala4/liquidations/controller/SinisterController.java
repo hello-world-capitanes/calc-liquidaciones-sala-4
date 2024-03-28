@@ -63,6 +63,10 @@ public class SinisterController {
         return sinisterService.getSinisterDamage(idSinister, idDamage);
     }
 
+    @PutMapping("/{idSinister}/damages/{idDamage}")
+    public boolean updateSinisterDamage(@PathVariable Long idSinister, @PathVariable Long idDamage){
+        return sinisterService.updateSinisterDamage(idDamage);
+    }
     @DeleteMapping("/{idSinister}/damages/{idDamage}")
     public boolean deleteSinisterDamage(@PathVariable Long idSinister, @PathVariable Long idDamage){
         return sinisterService.deleteSinisterDamage(idDamage);

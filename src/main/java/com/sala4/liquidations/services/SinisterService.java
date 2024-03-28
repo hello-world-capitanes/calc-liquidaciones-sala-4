@@ -124,7 +124,8 @@ public class SinisterService implements ISinister{
     }
 
     @Override
-    public boolean updateSinisterDamage(Long idSinister, Long idDamage) {
+    public boolean updateSinisterDamage(Long idDamage) {
+
         return false;
     }
 

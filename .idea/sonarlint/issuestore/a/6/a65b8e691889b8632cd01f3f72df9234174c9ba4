@@ -1,11 +1,11 @@
 
 
-java:S4973x"<Strings and Boxed types should be compared using "equals()".(íşé°8–é¨è1J$44261d15-2e81-4511-96ed-fc26fc62d018
+java:S4973x"<Strings and Boxed types should be compared using "equals()".(íşé°8–é¨è1J$f4095009-2965-4ad6-ab9e-78cbcf1aa9e2
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$37767b44-6ff6-44f2-9bce-5bcb97d38a39
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$32747e76-5e3e-4ea3-b0b0-888e702a3185
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$cb2706c5-0600-4205-95e2-25c0c4db2107
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8§–é¨è1J$7c51a7c7-6140-4936-a6ec-0074bfd944c5
 •
-java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°–é¨è1J$ca9de283-01eb-41d6-9ca7-2a46b96373c8
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°–é¨è1J$c3b7e8f4-bff4-4b15-9dbc-a08a319c4687
 ‡
-java:S16128"DReplace this lambda with method reference 'Damages::getDescription'.(ÕãßÈ8±–é¨è1J$16590a00-40f9-47d1-b186-2be09e59b952
+java:S16128"DReplace this lambda with method reference 'Damages::getDescription'.(ÕãßÈ8±–é¨è1J$709e1bdd-9bed-42cf-87d4-a2338a963117
